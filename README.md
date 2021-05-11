@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Vui
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.4.
@@ -25,3 +26,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+=======
+# vui
+Vui is a user interface framework for web applications under the concept of atomic design.
+>>>>>>> da7a5f0937111faa0b3a981be511a036299c7bed

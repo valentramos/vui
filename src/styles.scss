@@ -25,3 +25,38 @@ $font-3: 'Open Sans', sans-serif;
 $font-4: 'Open Sans', sans-serif;
 $font-5: 'Open Sans', sans-serif;
 $font-6: 'Open Sans', sans-serif;
+
+/*
+Atomic Design
+components
+│   ├── atoms
+│   │   ├── button
+│   │   ├── card
+│   │   ├── form
+│   │   │   └── select
+│   │   ├── icon-field
+│   │   ├── icons
+│   │   ├── input
+│   │   ├── text
+│   │   └── well
+│   ├── molecules
+│   │   ├── account-forgot
+|		|		...
+|   ├── organisms
+│   │   ├── accordion
+│   │   ├── board
+│   │   ├── card-feed
+|		|		...
+├── styles
+│   ├── _settings.scss
+│   ├── app.scss
+│   ├── critical.scss
+│   ├── documentation.scss
+│   ├── icons.scss
+│   ├── mixins
+│   │   ├── _materials.scss
+│   │   ├── _shadows.scss
+│   │   └── _well.scss
+│   └── vendor
+|
+*/
