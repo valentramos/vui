@@ -121,3 +121,34 @@ p {
         }
     }
 }
+
+//post-image
+.post-image-atom {
+    width: 460px;
+    height: 460px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title-post-atom {
+    font-size: 1em;
+}
+
+.date-post-atom {
+    font-size: .8em;
+    color: rgba($color: $color-light, $alpha: .6);
+}
+
+.notification-number-atom {
+    width: 18px;
+    height: 18px;
+    display: block;
+    line-height: 18px;
+    text-align: center;
+    margin: auto;
+    border-radius: 50%;
+    background-color: red;
+    color: $color-light;
+    font-size: .8em;
+}
