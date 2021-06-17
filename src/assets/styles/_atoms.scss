@@ -3,6 +3,33 @@
 h1, h2, h3, h4, h5, h6 {
     font-family: $font-1;
     color: $color-light;
+    &.opacity-1 {
+        color: rgba($color: $color-light, $alpha: .1);
+    }
+    &.opacity-2 {
+        color: rgba($color: $color-light, $alpha: .2);
+    }
+    &.opacity-3 {
+        color: rgba($color: $color-light, $alpha: .3);
+    }
+    &.opacity-4 {
+        color: rgba($color: $color-light, $alpha: .4);
+    }
+    &.opacity-5 {
+        color: rgba($color: $color-light, $alpha: .5);
+    }
+    &.opacity-6 {
+        color: rgba($color: $color-light, $alpha: .6);
+    }
+    &.opacity-7 {
+        color: rgba($color: $color-light, $alpha: .7);
+    }
+    &.opacity-8 {
+        color: rgba($color: $color-light, $alpha: .8);
+    }
+    &.opacity-9 {
+        color: rgba($color: $color-light, $alpha: .9);
+    }
 }
 
 p {
