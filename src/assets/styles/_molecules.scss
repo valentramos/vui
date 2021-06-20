@@ -3,18 +3,18 @@
     grid-template-columns: 3fr 4fr 3fr;
     grid-gap: 10px;
     background-color: #242526;
-    border-bottom: 1px solid rgba($color: $color-light, $alpha: .1);
+    border-bottom: 1px solid rgba($color: $color_light, $alpha: .1);
     .item {
         text-align: center;
-        padding: 20px 0;
+        padding: 10px 0;
         font-size: 30px;
-        color: $color-light;
+        color: $color_light;
     }
     .menu {
         display: grid;
         grid-template-columns: auto auto auto auto auto;
         grid-gap: 20px;
-        color: $color-light;
+        color: $color_light;
         align-items: center;
         text-align: center;
     }
@@ -27,14 +27,14 @@
         grid-gap: 5px;
         padding: 10px;
         background-color: #242526;
-        border-bottom: 1px solid rgba($color: $color-light, $alpha: .1);
+        border-bottom: 1px solid rgba($color: $color_light, $alpha: .1);
         align-items: center;
         transition: .2s;
         i {
             color: $color-1;
         }
         &:hover {
-            background-color: rgba($color: $color-light, $alpha: .1);
+            background-color: rgba($color: $color_light, $alpha: .1);
             border-radius: 6px;
         }
     }

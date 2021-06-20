@@ -1,34 +1,12 @@
-// @import url('settings.scss');
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: $font-1;
-    color: $color-light;
-    &.opacity-1 {
-        color: rgba($color: $color-light, $alpha: .1);
-    }
-    &.opacity-2 {
-        color: rgba($color: $color-light, $alpha: .2);
-    }
-    &.opacity-3 {
-        color: rgba($color: $color-light, $alpha: .3);
-    }
-    &.opacity-4 {
-        color: rgba($color: $color-light, $alpha: .4);
-    }
-    &.opacity-5 {
-        color: rgba($color: $color-light, $alpha: .5);
-    }
-    &.opacity-6 {
-        color: rgba($color: $color-light, $alpha: .6);
-    }
-    &.opacity-7 {
-        color: rgba($color: $color-light, $alpha: .7);
-    }
-    &.opacity-8 {
-        color: rgba($color: $color-light, $alpha: .8);
-    }
-    &.opacity-9 {
-        color: rgba($color: $color-light, $alpha: .9);
+// Titles font & opacity rgba configuration
+@for $i from 1 to 6 {
+    h#{$i}{
+        font-family: $font-1;
+        @for $i from 1 to 10 {
+            &.opacity-#{$i}{
+                color: rgba($color: $color_light, $alpha: $i / 10);
+            }   
+        }
     }
 }
 
@@ -36,65 +14,31 @@ p {
     font-family: $font-1;
 }
 
-.logo {
-    font-size: 1.5vw;
+
+//Colors class configuration
+$colors: $color_1, $color_2, $color_3, $color_4, $color_5, $color_6;
+@for $i from 1 through length($colors) {
+    .color-#{$i}{
+        color: nth($colors, $i);
+    }
+}
+//Background colors class configuration
+@for $i from 1 through length($colors) {
+    .bg-#{$i}{
+        background-color: nth($colors, $i);
+    }
+}
+
+// Text align configuration
+$aligns: left, right, center, justify;
+@each $align in $aligns {
+    .text-#{$align} {
+        text-align: $align;
+    }
 }
 
 .opt-title {
     font-size: .9em;
-}
-// Colors class configuration
-.color-1 {
-    color: $color-1;
-}
-.color-2 {
-    color: $color-2;
-}
-.color-3 {
-    color: $color-3;
-}
-.color-4 {
-    color: $color-4;
-}
-.color-5 {
-    color: $color-5;
-}
-.color-6 {
-    color: $color-6;
-}
-
-// Background colors class configuration
-.bg-1 {
-    background-color: $color-1;
-}
-.bg-2 {
-    background-color: $color-2;
-}
-.bg-3 {
-    background-color: $color-3;
-}
-.bg-4 {
-    background-color: $color-4;
-}
-.bg-5 {
-    background-color: $color-5;
-}
-.bg-6 {
-    background-color: $color-6;
-}
-
-// Text align configuration
-.text-left {
-    text-align: left;
-}
-.text-right {
-    text-align: right;
-}
-.text-center {
-    text-align: center;
-}
-.text-justify {
-    text-align: justify;
 }
 
 // button with icons configuration
@@ -105,18 +49,18 @@ p {
     transition: all .2s;
     i {
         font-size: 1.6em;
-        color: rgba($color: $color-light, $alpha: .8);
+        color: rgba($color: $color_light, $alpha: .8);
     }
     &.active {
         i {
-            color: $color-1;
+            color: $color_1;
         }
     }
     &:hover {
-        background-color: rgba($color: $color-light, $alpha: .1);
+        background-color: rgba($color: $color_light, $alpha: .1);
         border-radius: 6px;
         i {
-            color: rgba($color: $color-light, $alpha: 1);
+            color: rgba($color: $color_light, $alpha: 1);
         }
     }
 }
@@ -164,7 +108,7 @@ p {
 
 .date-post-atom {
     font-size: .8em;
-    color: rgba($color: $color-light, $alpha: .6);
+    color: rgba($color: $color_light, $alpha: .6);
 }
 
 .notification-number-atom {
@@ -176,6 +120,10 @@ p {
     margin: auto;
     border-radius: 50%;
     background-color: red;
-    color: $color-light;
+    color: $color_light;
     font-size: .8em;
+}
+
+.logo {
+    font-size: 1.5vw;
 }
